@@ -1,0 +1,13 @@
+kubectl get services -A
+Gives us all the services NAMESPACE from the cluster 
+
+NAMESPACE     NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
+default       kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP                  2d21h
+kube-system   kube-dns     ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   2d21h
+=====================================================
+kubectl get service
+Gives us the service from the current NAMESPACE
+
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+frontend     NodePort    10.99.184.203   <none>        80:30324/TCP   113s
+kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP        2d21h

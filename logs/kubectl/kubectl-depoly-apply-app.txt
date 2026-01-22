@@ -1,0 +1,4 @@
+deployment.apps/backend created
+service/backend created
+deployment.apps/frontend created
+service/frontend created

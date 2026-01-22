@@ -1,0 +1,2 @@
+NAME       STATUS   ROLES           AGE     VERSION
+minikube   Ready    control-plane   2d20h   v1.34.0

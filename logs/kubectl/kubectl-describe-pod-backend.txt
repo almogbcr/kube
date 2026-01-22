@@ -1,0 +1,55 @@
+Name:             backend-576ccdb8d-mpqtt
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Thu, 22 Jan 2026 19:33:07 +0200
+Labels:           app=backend
+                  pod-template-hash=576ccdb8d
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.6
+IPs:
+  IP:           10.244.0.6
+Controlled By:  ReplicaSet/backend-576ccdb8d
+Containers:
+  backend:
+    Container ID:   docker://70e00be5dad36ecde7f492da8fb3aaee291436e544f642032fa829d115b570f0
+    Image:          nginxdemos/hello
+    Image ID:       docker-pullable://nginxdemos/hello@sha256:b28d1e16c676896aaa98ed9c36d406cc4f4289558487f15e37e04354720f807a
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Thu, 22 Jan 2026 19:33:12 +0200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-5tk8m (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-5tk8m:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  35m   default-scheduler  Successfully assigned default/backend-576ccdb8d-mpqtt to minikube
+  Normal  Pulling    35m   kubelet            spec.containers{backend}: Pulling image "nginxdemos/hello"
+  Normal  Pulled     35m   kubelet            spec.containers{backend}: Successfully pulled image "nginxdemos/hello" in 2.197s (2.197s including waiting). Image size: 52556834 bytes.
+  Normal  Created    35m   kubelet            spec.containers{backend}: Created container: backend
+  Normal  Started    35m   kubelet            spec.containers{backend}: Started container backend
+

@@ -1,0 +1,5 @@
+NAME              STATUS   AGE
+default           Active   2d20h
+kube-node-lease   Active   2d20h
+kube-public       Active   2d20h
+kube-system       Active   2d20h

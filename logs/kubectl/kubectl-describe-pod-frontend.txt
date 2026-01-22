@@ -1,0 +1,54 @@
+Name:             frontend-7b9bcbbfc4-mbtmb
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Thu, 22 Jan 2026 19:33:07 +0200
+Labels:           app=frontend
+                  pod-template-hash=7b9bcbbfc4
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.7
+IPs:
+  IP:           10.244.0.7
+Controlled By:  ReplicaSet/frontend-7b9bcbbfc4
+Containers:
+  frontend:
+    Container ID:   docker://d2a89476aee8c40b4b945d7a4a200b4abb7c584ddd029c2e3674246d8cc3fd64
+    Image:          nginx:alpine
+    Image ID:       docker-pullable://nginx@sha256:b0f7830b6bfaa1258f45d94c240ab668ced1b3651c8a222aefe6683447c7bf55
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Thu, 22 Jan 2026 19:33:09 +0200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-kr7wb (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-kr7wb:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  36m   default-scheduler  Successfully assigned default/frontend-7b9bcbbfc4-mbtmb to minikube
+  Normal  Pulled     36m   kubelet            spec.containers{frontend}: Container image "nginx:alpine" already present on machine
+  Normal  Created    36m   kubelet            spec.containers{frontend}: Created container: frontend
+  Normal  Started    36m   kubelet            spec.containers{frontend}: Started container frontend
+

@@ -1,0 +1,21 @@
+minikube --help | grep -E '^[[:space:]]*service[[:space:]]' >> minikube/minikube-front-service.txt 
+service          Returns a URL to connect to a service
+
+
+minikube service frontend 
+
+This command exposes the frontend with random port (we did not defined a port) to port 80 that we defined on our yaml file - frontend-service.yaml.
+The frontend communicates from the backend.
+
+note for myself:
+I used it on docker - docker run -p externalport:internalport <imagename>
+
+
+┌───────────┬──────────┬─────────────┬───────────────────────────┐
+│ NAMESPACE │   NAME   │ TARGET PORT │            URL            │
+├───────────┼──────────┼─────────────┼───────────────────────────┤
+│ default   │ frontend │ 80          │ http://192.168.49.2:30324 │
+└───────────┴──────────┴─────────────┴───────────────────────────┘
+🎉  Opening service default/frontend in default browser...
+Opening in existing browser session.
+

@@ -1,0 +1,8 @@
+NAME                               READY   STATUS    RESTARTS        AGE
+coredns-66bc5c9577-bsk6l           1/1     Running   1 (2d20h ago)   2d20h
+etcd-minikube                      1/1     Running   1 (2d20h ago)   2d20h
+kube-apiserver-minikube            1/1     Running   1 (4m51s ago)   2d20h
+kube-controller-manager-minikube   1/1     Running   1 (2d20h ago)   2d20h
+kube-proxy-j5wnn                   1/1     Running   1 (2d20h ago)   2d20h
+kube-scheduler-minikube            1/1     Running   1 (2d20h ago)   2d20h
+storage-provisioner                1/1     Running   2 (3m48s ago)   2d20h
