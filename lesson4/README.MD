@@ -19,5 +19,12 @@
 ### A.We can change replica using kubectl with:
 >### kubectl scale --replicas=2 deploymentname
 ### Proof: [kubectl get pods](https://github.com/almogbcr/kube/blob/main/replica/scalebackend.log)
+#####
+#####
+#####
+## * Q.Explain Deployment vs Pod
+###
+## * Q.Explain Service vs Container
+###
 
 
