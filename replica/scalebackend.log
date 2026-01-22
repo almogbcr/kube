@@ -1,3 +1,13 @@
+Command : 
+kubectl scale deploy backend --replicas=2
+Can be written as following 
+kubectl scale  deployment/backend --replicas=2
+
+*Note*
+This change is applied imperatively. On the next kubectl apply of the original YAML file,
+the backend will revert to 1 replica, as defined in the manifest.
+
+
 NAME                        READY   STATUS    RESTARTS   AGE
 backend-576ccdb8d-94nzp     1/1     Running   0          5m7s
 backend-576ccdb8d-hbqbz     1/1     Running   0          3m14s
