@@ -1,0 +1,4 @@
+NAME                        READY   STATUS    RESTARTS   AGE
+backend-576ccdb8d-94nzp     1/1     Running   0          5m7s
+backend-576ccdb8d-hbqbz     1/1     Running   0          3m14s
+frontend-7b9bcbbfc4-95n86   1/1     Running   0          5m7s
