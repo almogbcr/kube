@@ -22,9 +22,9 @@
 #####
 #####
 #####
-## * Q.Explain Deployment vs Pod
+* ##  Q.Explain Deployment vs Pod
 ###
-## * Q.Explain Service vs Container
+* ##  Q.Explain Service vs Container
 ###
 
 
