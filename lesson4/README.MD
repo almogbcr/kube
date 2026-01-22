@@ -21,7 +21,8 @@
 ### Proof: [kubectl get pods](https://github.com/almogbcr/kube/blob/main/replica/scalebackend.log)
 #####        
 #####          
-#####         
+#####
+# Concepts         
 * ##  Q.Explain Deployment vs Pod
 ###
 * ##  Q.Explain Service vs Container
